@@ -10,6 +10,9 @@ use Faker\Factory;
 
 class AppFixtures extends Fixture
 {
+    /**
+     * @param ObjectManager $manager
+     */
     public function load(ObjectManager $manager)
     {
         $faker = Factory::create('fr_FR');
