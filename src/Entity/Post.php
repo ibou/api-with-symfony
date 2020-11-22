@@ -46,7 +46,7 @@ class Post
     private $createdAt;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="post")
+     * @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="post", cascade={"persist"})
      * @Groups("post:read")
      */
     private $comments;

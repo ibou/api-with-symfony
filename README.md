@@ -9,4 +9,30 @@ Code du cours sur les API avec Symfony
 4. Jouez les fixtures : `php bin/console d:f:l --no-interaction`
 5. Lancez le server : `symfony serve` ou `php -S localhost:3000 -t public`
 # api-with-symfony
-# api-with-symfony
+Api with postman
+-----------------
+## Get
+
+```json
+get http://localhost:8000/api/post
+
+```
+
+## Post
+
+```json
+Post http://localhost:8000/api/post
+
+{
+    "title": "title test",
+    "content": "Mon content ffaeff eaflk ea",
+    "comments": [
+        { 
+                "username": "papao",
+                "content": "Accusantium commodi quo maxime facere culpa. Est dignissimos aspernatur ut necessitatibus ullam aperiam. Qui animi velit quo non inventore ab quis."
+            }
+    ]
+}
+
+```
+
